@@ -1,0 +1,174 @@
+@import 'heart';
+
+$blue_dark: #29339B;
+$blue_light: #6184D8;
+$green_light: #50C5B7;
+$green_dark: #018E42;
+$coral: #E66F87;
+$gray-light: #E5E6E4;
+
+$blue_main: #879BAF;
+$green_main: #33A57F;
+$pink_main: #FFDAE0;
+$gray_medium: #CDD3CE;
+$gray_light: #F9F8F8;
+$gray_background: #F6F7FF;
+
+$allura_font: 'Allura', cursive;
+
+body {
+  background: url("/images/bistro_background.jpg") $gray_medium;
+
+  color: $blue_main;
+  font-family: 'Inconsolata', monospace, sans-serif;
+  margin: 3% auto 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+
+  .nav-link {
+    color: $green_main;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 10px;
+
+    &:hover {
+      color: darken($green_main, 10%);
+    }
+  }
+
+  &.sticky {
+    background-color: $gray_medium;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 15px 0;
+    z-index: 9999;
+  }
+}
+
+.main {
+  margin: 0 auto;
+  width: 65%;
+
+  .section-header {
+    color: $blue_main;
+    font-family: $allura_font;
+    font-size: 2.5em;
+  }
+}
+
+header {
+  background: $gray_background;
+  color: $blue_main;
+  padding: 1% 2%;
+
+  .header-photo {
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .header-date {
+    text-align: center;
+  }
+
+  .header-title {
+    font-family: $allura_font;
+    font-size: 3.5em;
+    text-align: center;
+    margin: 2% 0;
+  }
+}
+
+.section {
+  background-color: $gray_background;
+  margin: 5% 0 1%;
+  padding: 1% 0;
+  text-align: center;
+}
+
+.us {
+  .us-story {
+    color: $blue_main;
+    padding: 0 3%;
+    text-align: left;
+  }
+}
+
+.party {
+  padding: 2% 7%;
+  position: relative;
+
+  .party-img {
+    border: 5px solid $green_main;
+    max-height: 250px;
+    max-width: 250px;
+  }
+
+  .party-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .party-member {
+    margin: 2.5% 10px;
+  }
+
+  .party-name,
+  .party-title {
+    margin: 0;
+  }
+
+  .party-title {
+    font-family: $allura_font;
+    font-size: 1.3em;
+  }
+}
+
+.events {
+  .event {
+    margin-bottom: 20px;
+  }
+
+  .event-name {
+    margin-bottom: 0;
+  }
+
+  .event-details {
+    margin: 5px 0;
+  }
+}
+
+.registry {
+  padding: 1% 3%;
+}
+
+.photos {
+  padding: 2% 7%;
+  position: relative;
+
+  .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    margin: 2.5% 10px;
+  }
+
+  .us-img,
+  .img-description {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .img-description {
+    margin: 0;
+  }
+}
